@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+
+    <!-- Fuente externa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-pages">
+
+        <!-- Logo -->
+        <figure class="logo-figure-header">
+            <img class="logo-img-header" src="../img/Logo.png" alt="Logo de la agencia digital de viajes">
+        </figure>
+
+        <!-- Menú -->
+        <nav>
+            <ul class="menu-ul-header">
+                <li class="menu-li-header">
+                    <a class="menu-enlace-header" href="../index.html">Inicio</a>
+                </li>
+                <li class="menu-li-header">
+                    <a class="menu-enlace-header" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu-li-header">
+                    <a class="menu-enlace-header" href="destinos.html">Próximos Destinos</a>
+                </li>
+                <li class="menu-li-header">
+                    <a class="menu-enlace-header" href="preguntas.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="menu-li-header">
+                    <a class="menu-enlace-header" href="contactanos.html">Contactanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section>
+            <h2>Contactanos</h2>
+            <!-- Dirección -->
+            <p>Dirección: Sarandí 700, Montevideo, Uruguay</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9972957745276!2d-56.20339272443712!3d-34.906517373552354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802afe10cee1%3A0xb95846203de847c5!2sPuerta%20de%20la%20Ciudadela!5e0!3m2!1ses!2spe!4v1703016966720!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Formulario -->
+            <form action="#">
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="Ingrese su email">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10">Ingrese su mensaje</textarea>
+
+                <input class="enviar" type="submit" value="Enviar">
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-parrafo">SEGUI NUESTRAS REDES SOCIALES</p>
+        <a target="_blank" href="#">
+            <img src="../img/f.png" alt="Enlace a la cuenta de Facebook de la agencia">
+        </a>
+        <a target="_blank" href="#">
+            <img src="../img/i.png" alt="Enlace a la cuenta de Instagram de la agencia">
+        </a>
+    </footer>
+    
+</body>
+</html>

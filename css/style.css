@@ -1,0 +1,427 @@
+/* Reset */
+*{
+   /*  padding: 0;
+    margin: 0; */
+    font-family: 'Poppins', sans-serif;;
+}
+
+
+/* Estilos Globales */
+:root{
+    --cAzulOscuro: rgb(26, 117, 188);
+    --cAzulClaro: rgb(0, 128, 255);
+    --cCelesteClaro: rgb(228, 245, 241);
+    --cGrisClaro: rgb(244, 244, 244);
+    --cBlanco: rgb(255, 255, 255);
+    --cNegro: rgb(0, 0, 0);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 5rem;
+    font-style: italic;
+    color: var(--cBlanco);
+
+    padding: 5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+header{
+    padding: 1rem;
+}
+
+section{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/* PAGE 1: INICIO------------------------------------------------------------------*/
+
+/* Header*/
+.header-Inicio{
+    background-image: url(../img/Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--cAzulOscuro);
+    /* height: 80vh; */
+
+    text-align: center;  
+    padding-bottom: 5rem;
+    
+}
+
+.div-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space;
+
+}
+
+.logo-figure-header{
+    width: 50px;
+/*     background-color: red; */
+}
+
+.logo-img-header{
+    border-radius: 50%;
+    width: 100%;
+   
+}
+
+
+.menu-ul-header{
+    list-style:none;
+   /*  background-color: blue; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+.menu-li-header{
+    padding: 1rem 2rem;
+}
+
+.menu-enlace-header{
+    color: var(--cBlanco);
+    text-decoration: none;    
+}
+
+.menu-enlace-header:hover{
+    color:var(--cNegro);
+}
+
+
+
+.parrafo-header{
+    font-size: 1rem;
+   padding-top: 2rem;
+   padding-bottom: 1rem;
+   /*  background-color: green; */
+
+}
+
+.formulario-header{
+    padding-bottom: 5rem;
+
+}
+
+
+.input-header{
+    border-radius: 10px;
+    padding: 0.8rem;
+    font-size: 1rem;
+        
+}
+
+.email{
+    border: 2px solid var(--cBlanco);
+    display: inline-block;
+    width: 25%;
+    
+}
+
+.enviar{
+    border: 2px solid var(--cAzulClaro);
+    background-color: var(--cAzulClaro);
+    color: var(--cBlanco);
+    font-weight: bold;
+}
+
+.enviar:hover, .enlace-destinos:hover, .enlace-banner:hover, .enlace-comprar:hover{
+    background-color: var(--cBlanco);
+    color: var(--cAzulClaro);
+}
+
+
+/* Main */
+/* Seccion: Proximos Destinos */
+.seccion-destinos{
+    padding-bottom: 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: 
+    'titulo titulo titulo'
+    'articulo1 articulo2 articulo3'
+    'enlace enlace enlace';
+
+    text-align: center;
+
+    gap: 2rem;
+
+    margin: 0 5rem 0 5rem;
+
+}
+
+.titulo-section{
+    grid-area: titulo;
+
+    margin-bottom: 2rem;
+}
+
+.articulo-destinos{
+  /*   width: 400px; */
+  /*   margin: 2rem 0; */
+    background-color: var(--cGrisClaro);
+/*     text-align: center; */
+    padding-bottom: 2rem;
+    border-radius: 0 0 10px 10px;
+
+
+}
+
+.destino-uno{
+    grid-area: articulo1;
+}
+
+.destino-dos{
+    grid-area: articulo2;
+}
+
+.destino-tres{
+    grid-area: articulo3;
+}
+
+.figure-destinos{
+    height: 250px;
+    margin-bottom: 1rem;
+}
+
+.imagen-destinos{
+    width: 100%;  
+    height: 100%;
+    border-radius: 10px 10px 0 0; 
+}
+
+.enlace-destinos{
+    background-color: var(--cAzulClaro);
+    color: var(--cBlanco);
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: 2px solid var(--cAzulClaro);
+    font-weight: bold;
+
+    display: inline-block;
+
+    grid-area: enlace;
+    width: 25%;
+    margin: auto;
+}
+
+
+/* Seccion: Recomendaciones */
+.seccion-Recomendaciones{
+    padding: 4rem;
+    background-color: var(--cGrisClaro);
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+
+    grid-template-areas: 
+    'titulo titulo titulo titulo'
+    'uno dos tres cuatro';
+
+}
+
+.titulo-Recomendaciones{
+    grid-area: titulo;
+
+}
+
+.articulo-Recomendaciones{
+    background-color: var(--cBlanco);
+    padding: 1rem;
+    margin: 2rem;
+    font-style: italic;
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.recomendacion-uno{
+    grid-area:uno;
+}
+
+.recomendacion-dos{
+    grid-area: dos;
+}
+
+.recomendacion-tres{
+    grid-area: tres;
+}
+
+.recomendacion-cuatro{
+    grid-area: cuatro;
+}
+
+.imagen-Recomendaciones{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--cGrisClaro);
+}
+
+
+/* Seccion: Banner */
+.seccion-banner-Inicio{
+    background-image: url("../img/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 50vh;
+    text-align: center; 
+}
+
+.titulo-banner{
+    color: var(--cBlanco);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.enlace-banner{ 
+    background-color: var(--cAzulClaro);
+    color:var(--cBlanco);
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: 2px solid var(--cAzulClaro);
+    font-weight: bold;
+}
+
+
+
+/* Footer*/
+footer{
+    background-color: var(--cAzulOscuro);
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-parrafo{
+    color: var(--cBlanco);
+    font-size: 1rem;
+}
+
+
+/* PAGE 2: NOSOTROS-------------------------------------------------------------- */
+/* Header */
+.header-pages{
+    background-color: var(--cAzulOscuro);
+
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+/* Main */
+.seccion-Nosotros{
+    text-align: center;
+    padding-bottom: 4rem;
+
+}
+
+.nombres-Nosotros{
+    color: var(--cAzulClaro);
+}
+
+.imagen-Nosotros{
+    margin-top: 2rem;
+    width: 300px;
+}
+
+
+/* PAGE 3: PROXIMOS DESTINOS -------------------------------------------------*/
+.seccion-ProximosDestinos{
+    background-color: var(--cGrisClaro);
+
+}
+
+.articulo-ProximosDestinos{
+    margin:2rem;
+    border-radius: 10px;
+    background-color: var(--cBlanco);
+
+}
+
+.imagen-ProximosDestinos{
+    width: 500px;
+    border-radius: 10px 0 0 0;
+}
+
+.servicioIncluido, .servicioNoIncluido{
+    font-weight: bold; 
+}
+
+.enlace-itinerario{
+    text-decoration: underline;
+    color: var(--cPrincipal);
+}
+
+.enlace-comprar{
+    background-color: var(--cAzulClaro);
+    color:var(--cBlanco);
+    padding:  0 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: 2px solid var(--cAzulClaro);
+    font-weight: bold;
+}
+
+
+
+/* PAGINA 4: PREGUNTAS FRECUENTES---------------------------------------------------- */
+.seccion-preguntas{
+    background-color: var(--cGrisClaro);
+    padding-bottom: 4rem;
+}
+
+.article-preguntas{
+    background-color: var(--cBlanco);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.pregunta{
+    color: var(--cAzulClaro);
+    font-weight: bold;
+}
+
+.seccion-banner-Preguntas{
+    background-image: url("../img/contactanos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 50vh;
+    text-align: center;
+}
