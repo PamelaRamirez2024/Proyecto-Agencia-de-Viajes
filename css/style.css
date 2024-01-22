@@ -2,7 +2,7 @@
 *{
    /*  padding: 0;
     margin: 0; */
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -76,11 +76,12 @@ section{
     align-items: center;
     justify-content: space;
 
+
 }
 
 .logo-figure-header{
     width: 50px;
-/*     background-color: red; */
+   /*  background-color: red; */
 }
 
 .logo-img-header{
@@ -340,7 +341,10 @@ footer{
     display: flex;
     /* justify-content: center; */
 
+    
+
 }
+
 
 /* Main */
 .seccion-Nosotros{
@@ -353,10 +357,17 @@ footer{
     color: var(--cAzulClaro);
 }
 
-.imagen-Nosotros{
+.carousel{
+    /* background-color: red; */
+    width: 400px;
+    margin: auto;
+    
+}
+
+/* .imagen-Nosotros{
     margin-top: 2rem;
     width: 300px;
-}
+} */
 
 
 /* PAGE 3: PROXIMOS DESTINOS -------------------------------------------------*/
