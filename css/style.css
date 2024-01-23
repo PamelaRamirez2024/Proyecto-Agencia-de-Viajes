@@ -62,10 +62,9 @@ section{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--cAzulOscuro);
-    /* height: 80vh; */
 
     text-align: center;  
-    padding-bottom: 5rem;
+    height: 90vh;
     
 }
 
@@ -81,7 +80,6 @@ section{
 
 .logo-figure-header{
     width: 50px;
-   /*  background-color: red; */
 }
 
 .logo-img-header{
@@ -93,9 +91,7 @@ section{
 
 .menu-ul-header{
     list-style:none;
-   /*  background-color: blue; */
-
-    display: flex;
+     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -115,18 +111,10 @@ section{
     color:var(--cNegro);
 }
 
-
-
 .parrafo-header{
     font-size: 1rem;
    padding-top: 2rem;
    padding-bottom: 1rem;
-   /*  background-color: green; */
-
-}
-
-.formulario-header{
-    padding-bottom: 5rem;
 
 }
 
@@ -176,7 +164,7 @@ section{
 
     gap: 2rem;
 
-    margin: 0 5rem 0 5rem;
+    margin: 0 3rem 0 3rem;
 
 }
 
@@ -250,6 +238,8 @@ section{
     'titulo titulo titulo titulo'
     'uno dos tres cuatro';
 
+    gap: 2rem;
+
 }
 
 .titulo-Recomendaciones{
@@ -257,10 +247,11 @@ section{
 
 }
 
+
 .articulo-Recomendaciones{
     background-color: var(--cBlanco);
     padding: 1rem;
-    margin: 2rem;
+   /*  margin: 2rem; */
     font-style: italic;
     text-align: center;
 
@@ -340,8 +331,6 @@ footer{
 
     display: flex;
     /* justify-content: center; */
-
-    
 
 }
 
@@ -435,4 +424,158 @@ footer{
 
     height: 50vh;
     text-align: center;
+}
+
+
+/* MEDIA QUERYS------------------------------------------------------------------------- */
+
+/* Mobile */
+@media only screen and (max-width: 500px){
+
+    /* Header------------------------------------------- */
+    .header-Inicio{
+        height: 100vh;
+    }
+    
+    h1{
+        font-size: 4rem;
+        padding: 2rem;
+    }
+
+    .email{
+    width: 50%;
+    } 
+    
+    /* Main------------------------------------------------ */
+    /* Seccion Proximos destinos */
+    .seccion-destinos{  
+        padding-bottom: 4rem;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+
+        grid-template-areas: 
+        'titulo titulo titulo'
+        'articulo1 articulo1 articulo1'
+        'articulo2 articulo2 articulo2'
+        'articulo3 articulo3 articulo3'
+        'enlace enlace enlace';
+
+    text-align: center;
+
+    gap: 2rem;
+
+    margin: 0 2rem 0 2rem;
+        
+    }
+
+    .enlace-destinos{
+        width: 100%;
+    }
+
+
+    /* Recomendaciones */
+    .seccion-Recomendaciones{  
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+    
+        grid-template-areas: 
+        'titulo titulo titulo titulo'
+        'uno uno uno uno';
+
+    }
+
+    .recomendacion-dos{
+        grid-area: dos;
+        display:none;
+
+    }
+    
+    .recomendacion-tres{
+        grid-area: tres;
+        display:none;
+    }
+    
+    .recomendacion-cuatro{
+        grid-area: cuatro;
+        display: none;
+    }
+  
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width: 968px){
+
+    /* Header------------------------------------------- */
+    .header-Inicio{
+        height: 100vh;
+    }
+    
+    h1{
+        font-size: 4rem;
+        padding: 4rem;
+    }
+
+    .email{
+    width: 40%;
+    } 
+
+    /* Main---------------------------------------------- */
+    /* Seccion Proximos Destinos */
+    .seccion-destinos{ 
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+
+        grid-template-areas: 
+        'titulo titulo titulo titulo'
+        'articulo1 articulo1 articulo2 articulo2'
+        'articulo3 articulo3 articulo3 articulo3'
+        'enlace enlace enlace enlace';
+
+        text-align: center;
+
+        gap: 2rem;
+    
+        margin: 0 2rem 0 2rem;
+   
+    }
+
+    .destino-tres{
+        grid-area: articulo3;
+        width: 75%;
+        margin: auto;
+    }
+
+    .enlace-destinos{
+        width: 50%;
+    }
+
+    /* Recomendaciones */
+    .seccion-Recomendaciones{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+    
+        grid-template-areas: 
+        'titulo titulo titulo titulo'
+        'uno uno dos dos';
+    
+    }
+
+
+    .recomendacion-tres{
+        grid-area: tres;
+        display:none;
+    }
+    
+    .recomendacion-cuatro{
+        grid-area: cuatro;
+        display: none;
+    }
+
+
 }
