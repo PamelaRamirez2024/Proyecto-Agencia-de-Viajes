@@ -339,7 +339,6 @@ footer{
 .seccion-Nosotros{
     text-align: center;
     padding-bottom: 4rem;
-
 }
 
 .nombres-Nosotros{
@@ -347,9 +346,9 @@ footer{
 }
 
 .carousel{
-    /* background-color: red; */
-    width: 400px;
+    width: 300px;
     margin: auto;
+    padding-top: 2rem;
     
 }
 
@@ -362,14 +361,54 @@ footer{
 /* PAGE 3: PROXIMOS DESTINOS -------------------------------------------------*/
 .seccion-ProximosDestinos{
     background-color: var(--cGrisClaro);
+    padding: 2rem 4rem 0 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto repeat(3, 1fr);
+
+    grid-template-areas:
+    'titulo titulo titulo'
+    'anio anio anio'
+    'destino1 destino1 destino1'
+    'destino2 destino2 destino2'
+    'destino3 destino3 destino3';
+
+    gap: 2rem;
+
+    padding-bottom: 5rem;
 
 }
 
 .articulo-ProximosDestinos{
-    margin:2rem;
     border-radius: 10px;
     background-color: var(--cBlanco);
 
+    display: flex;
+    gap: 5rem;
+
+    padding: 2rem;
+}
+
+
+.titulo-ProximosDestinos{
+    grid-area: titulo;
+}
+
+.formulario-select-anio{
+    grid-area: anio;
+ }
+
+#nortePeru{
+    grid-area: destino1;
+}
+
+#italia{
+    grid-area: destino2;
+}
+
+#ny{
+    grid-area:destino3;
 }
 
 .imagen-ProximosDestinos{
@@ -396,12 +435,15 @@ footer{
     font-weight: bold;
 }
 
+.imagen-ProximosDestinos{
+    width: 500px;
+}
 
 
 /* PAGINA 4: PREGUNTAS FRECUENTES---------------------------------------------------- */
 .seccion-preguntas{
     background-color: var(--cGrisClaro);
-    padding-bottom: 4rem;
+    padding: 4rem;
 }
 
 .article-preguntas{
@@ -425,6 +467,18 @@ footer{
     height: 50vh;
     text-align: center;
 }
+
+/* PAGINA 5: CONTACTANOS */
+
+ .seccion-contactanos{
+    padding: 0 5rem 0 5rem;
+ }
+
+ textarea{
+    resize: none;
+ }
+
+
 
 
 /* MEDIA QUERYS------------------------------------------------------------------------- */
@@ -503,6 +557,11 @@ footer{
         display: none;
     }
   
+    /* PAGINA CONTACTANOS: */
+    .div-ubicacion-Contactanos{
+        display: none;
+    }
+
 }
 
 
@@ -541,7 +600,8 @@ footer{
         gap: 2rem;
     
         margin: 0 2rem 0 2rem;
-   
+
+
     }
 
     .destino-tres{
@@ -577,5 +637,12 @@ footer{
         display: none;
     }
 
+    /* PAGINA CONTACTANOS: */
+    .div-ubicacion-Contactanos{
+        display: none;
+    }
+   
+
 
 }
+
