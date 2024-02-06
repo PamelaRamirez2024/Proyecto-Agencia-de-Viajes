@@ -1,0 +1,43 @@
+%parallax{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+%img_circular{
+    border-radius: 50%;
+    width: 100%;  
+}
+
+%enlace{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 30px; 
+}
+
+%boton{
+    border: 3px solid $colorSecundario;
+    background-color: $colorSecundario;
+    color: $colorPrincipal;
+    font-weight: bold;
+    
+    &:hover{
+        background-color: $colorPrincipal;
+        color: $colorSecundario;
+    }
+}
+
+%secciones{
+    padding: 2rem 4rem 5rem 4rem;
+    text-align: center;
+}
+
+%subtitulo{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 2rem; 
+}
+

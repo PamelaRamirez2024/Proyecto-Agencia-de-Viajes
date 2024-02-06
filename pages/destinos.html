@@ -23,7 +23,7 @@
 <body>
 
     <!-- Header -->
-    <header class="header-pages">
+    <header class="header-pages p-2">
         <!-- Menú -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -51,107 +51,118 @@
 
 
     <!-- Main -->
-    <main>
-        <section class="seccion-ProximosDestinos">
-            <h2 class="titulo-ProximosDestinos">Próximos Destinos</h2>
-            <form action="#" class="formulario-select-anio">
-                <label for="anio">Año: </label>
+    <main class="container-fluid m-0">
+        <section class="row justify-content-center align-items-center seccion-destinos">
+            <h2 class="col-12">Destinos</h2>
+            <form class="col-12 text-start" action="#">
+                <label for="anio">Filtro por Año: </label>
                 <select name="anio" id="anio">
                     <option value="2024">2024</option>
                     <option value="2025">2025</option>
                 </select>
             </form>
 
-            <article class="articulo-ProximosDestinos" id="nortePeru">
-                <figure class="contenedor-imagen-proximosDestinos">
-                    <img class="imagen-ProximosDestinos" src="../img/destino1.png" alt="">
+            <article class="col-12" id="nortePeru">
+                <figure class="figure-destinos m-0">
+                    <img class="img-destinos" src="../img/destino1.png" alt="">
                 </figure>
-                <div class="descripcion-ProximosDestinos">
+                <div class="descripcion-destinos">
                     <h3>Yoga & Surf en el Norte del Perú</h3>
                     <p>Fecha: 10 al 20 de Enero 2024</p>
                     <p class="servicioIncluido">Servicios incluidos:</p>
                     <nav>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Traslados desde y hacia el aeropuerto.</li>
+                            <li>Estadía en hoteles o alojamientos específicos.</li>
+                            <li>Desayuno u otros tipos de comidas incluidas.</li>
+                            <li>Visitas guiadas.</li>
+                            <li>Entradas a atracciones turísticas.</li>
                         </ul>
                     </nav>
                     <p class="servicioNoIncluido">Servicios no incluidos:</p>
                     <nav>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Billetes de avión.</li>
+                            <li>Comidas no incluidas en el itinerario.</li>
+                            <li>Propinas para guías, conductores, etc.</li>
                         </ul>
                     </nav>  
-                    <a  class="enlace-itinerario" href="#">Descarga el Itinerario</a>     
                 </div>
-                <div class="comprar-ProximosDestinos">
-                    <p>Precio Total (Base doble) $ 2500 </p>
-                    <a class="enlace-comprar" target="_blank" href="">Comprar</a>
+                <div class="comprar-destinos">
+                    <a href="#"><img class="itinerario img-fluid w-25 mb-4" src="../img/descargar-pdf.png" alt="" title="Itinerario"></a>
+                    <p>Precio Total (Base doble)</p>
+                    <p>$ 2500 </p>
+                    <a class="boton-comprar" target="_blank" href="">Comprar</a>
                 </div>
             </article>
 
-            <article class="articulo-ProximosDestinos" id="italia">
-                <figure >
-                    <img class="imagen-ProximosDestinos" src="../img/destino2.jpg" alt="">
+            <article class="col-12" id="italia">
+                <figure class="m-0">
+                    <img class="img-destinos" src="../img/destino2.jpg" alt="">
                 </figure>
-                <div class="descripcion-ProximosDestinos">
+                <div class="descripcion-destinos">
                     <h3>Tour Gastronómico por Italia</h3>
                     <p>Fecha: 1 al 10 de Junio</p>
                     <p class="servicioIncluido">Servicios incluidos:</p>
                     <nav>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Traslados desde y hacia el aeropuerto.</li>
+                            <li>Estadía en hoteles o alojamientos específicos.</li>
+                            <li>Desayuno u otros tipos de comidas incluidas.</li>
+                            <li>Visitas guiadas.</li>
+                            <li>Entradas a atracciones turísticas.</li>
+                        </ul>
                         </ul>
                     </nav>
                     <p class="servicioNoIncluido">Servicios no incluidos:</p>
                     <nav>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Billetes de avión.</li>
+                            <li>Comidas no incluidas en el itinerario.</li>
+                            <li>Propinas para guías, conductores, etc.</li>
                         </ul>
-                    </nav>  
-                    <a  class="enlace-itinerario" href="#">Descarga el Itinerario</a>     
+                    </nav>    
                 </div>
-                <div class="comprar-ProximosDestinos">
-                    <p>Precio Total (Base doble) $ 2500 </p>
-                    <a class="enlace-comprar" target="_blank" href="">Comprar</a>
+                <div class="comprar-destinos">
+                    <a href="#"><img class="itinerario img-fluid w-25 mb-4" src="../img/descargar-pdf.png" alt="" title="Itinerario"></a>
+                    <p>Precio Total (Base doble)</p>
+                    <p>$ 2500 </p>
+                    <a class="boton-comprar" target="_blank" href="">Comprar</a>
                 </div>
             </article>
 
-            <article class="articulo-ProximosDestinos" id="ny">
-                <figure >
-                    <img class="imagen-ProximosDestinos" src="../img/destino3.jpg" alt="">
+            <article class="col-12" id="ny">
+                <figure class="m-0">
+                    <img src="../img/destino3.jpg" alt="">
                 </figure>
-                <div class="descripcion-ProximosDestinos">
+                <div class="descripcion-destinos">
                     <h3>Navidad en New York</h3>
                     <p>Fecha: 10 al 20 diciembre </p>
                     <p class="servicioIncluido">Servicios incluidos:</p>
                     <nav>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Traslados desde y hacia el aeropuerto.</li>
+                            <li>Estadía en hoteles o alojamientos específicos.</li>
+                            <li>Desayuno u otros tipos de comidas incluidas.</li>
+                            <li>Visitas guiadas.</li>
+                            <li>Entradas a atracciones turísticas.</li>
+                        </ul>
                         </ul>
                     </nav>
                     <p class="servicioNoIncluido">Servicios no incluidos:</p>
                     <nav>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Billetes de avión.</li>
+                            <li>Comidas no incluidas en el itinerario.</li>
+                            <li>Propinas para guías, conductores, etc.</li>
                         </ul>
-                    </nav>  
-                    <a  class="enlace-itinerario" href="#">Descarga el Itinerario</a>     
+                    </nav>     
                 </div>
-                <div class="comprar-ProximosDestinos">
-                    <p>Precio Total (Base doble) $ 2500 </p>
-                    <a class="enlace-comprar" target="_blank" href="">Comprar</a>
+                <div class="comprar-destinos">
+                    <a href="#"><img class="itinerario img-fluid w-25 mb-4" src="../img/descargar-pdf.png" alt="" title="Itinerario"></a>
+                    <p>Precio Total (Base doble)</p>
+                    <p>$ 2500 </p>
+                    <a class="boton-comprar" target="_blank" href="">Comprar</a>
                 </div>
             </article>
         </section>
@@ -162,7 +173,7 @@
 
     <!-- Footer -->
     <footer>
-        <p class="footer-parrafo">Dirección: Sarandí 700, Montevideo, Uruguay</p>
+        <p>Dirección: Sarandí 700, Montevideo, Uruguay - Atención al Cliente: +598 98908152</p>
         <a target="_blank" href="#">
             <img src="../img/f.png" alt="Enlace a la cuenta de Facebook de la agencia">
         </a>

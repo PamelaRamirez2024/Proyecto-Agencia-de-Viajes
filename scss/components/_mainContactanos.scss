@@ -1,0 +1,28 @@
+/* Page: Contactanos */
+.seccion-contactanos{
+    @extend %secciones;
+    gap: 0 $gap-Secciones;
+
+    h2{
+        @extend %subtitulo;
+    }
+
+    form{
+
+        input {
+            border: 1px solid $colorBackground;
+            background-color: $colorBackground;   
+        }
+
+        .enviar{
+            @extend %boton;
+        }
+        
+
+        textarea{
+            border: 1px solid $colorBackground;
+            background-color: $colorBackground;
+            resize: none;
+        }
+    }
+}

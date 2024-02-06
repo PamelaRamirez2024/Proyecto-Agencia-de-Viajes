@@ -1,0 +1,11 @@
+ /* Main Nosotros */
+ .seccion-Nosotros{
+  @extend %secciones;
+
+    h2{
+      @extend %subtitulo;
+    }
+
+}
+
+

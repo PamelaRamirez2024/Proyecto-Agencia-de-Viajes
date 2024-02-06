@@ -1,0 +1,109 @@
+.seccion-destinos{
+    @extend %secciones;
+    gap: $gap-SeccionDestino;
+    background-color: $colorBackground;
+
+    h2{
+        @extend %subtitulo;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'img descripcion comprar';
+        gap: $gap-articulosDestinos;
+        padding: 2rem;
+        border-radius: 10px;
+        align-items: center;
+        background-color: $colorPrincipal;
+        
+        figure{
+            grid-area: img;
+            width: 1fr;
+
+            img{
+                width: 100%;
+            }
+
+        }
+
+        .descripcion-destinos{
+            grid-area: descripcion;
+            text-align: start;
+            margin: auto;
+
+            h3{
+                color: $colorSecundario;
+            }
+
+            p{
+                font-size: .9rem;
+            }
+
+            li{
+                font-size: .8rem;
+            }
+        }
+
+        .comprar-destinos{
+            grid-area: comprar;
+
+            .itinerario:hover{
+                transform: scale(1.2);
+            }
+            
+
+            .boton-comprar{
+                @extend %enlace, %boton;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERYS---------------------------------- */
+ /* Mobile*/
+ @media only screen and (max-width: 500px){
+    .seccion-destinos{
+        padding:2rem;
+
+        article{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas:
+            'img'
+            'descripcion'
+            'comprar'; 
+            padding: 0 1rem 0 1rem;
+        }
+    }
+ }
+
+ /* Tablet */
+@media only screen and (min-width: 501px) and (max-width: 768px){
+    .seccion-destinos{
+        article{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas:
+            'img'
+            'descripcion'
+            'comprar'; 
+        
+            padding: 1rem;
+         }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 968px){
+    .seccion-destinos{
+        article{
+            padding: 2rem;
+        }
+    }
+
+}

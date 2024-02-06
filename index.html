@@ -25,7 +25,7 @@
 <body>
 
     <!-- Header -->
-    <header class="header-Inicio">
+    <header class="header-Inicio p-2">
 
         <!-- Menú -->
         <nav class="navbar navbar-expand-lg">
@@ -42,99 +42,98 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active text-white fw-bolder menu-enlace-header" href="index.html">Inicio</a>
-                        <a class="nav-link menu-enlace-header" aria-current="page"
-                            href="pages/nosotros.html">Nosotros</a>
-                        <a class="nav-link menu-enlace-header" href="#proximosDestinos">Destinos</a>
-                        <a class="nav-link menu-enlace-header" href="pages/preguntas.html">Preguntas Frecuentes</a>
-                        <a class="nav-link menu-enlace-header" href="pages/contactanos.html">Contactanos</a>
+                        <a class="nav-link active text-white fw-bolder" href="index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="#proximosDestinos">Destinos</a>
+                        <a class="nav-link" href="pages/preguntas.html">Preguntas Frecuentes</a>
+                        <a class="nav-link" href="pages/contactanos.html">Contactanos</a>
                     </div>
                 </div>
             </div>
         </nav>
 
         <h1>Agencia de viajes</h1>
-        <p class="parrafo-header"><strong>Suscribite gratis y recibí nuestro boletin anual de viajes</strong></p>
-        <form class="formulario-header" action="#">
-            <input class="input-header email" type="email" placeholder="Ingresa tu email..">
-            <input class="input-header enviar" type="submit" value="Enviar">
+        <p class="pt-2 pb-1"><strong>Suscribite gratis y recibí nuestro boletin anual de viajes</strong></p>
+        <form action="#">
+            <input class="email" type="email" placeholder="Ingresa tu email..">
+            <input class="enviar" type="submit" value="Enviar">
         </form>
     </header>
 
     <!-- Main -->
     <main class="container-fluid p-0">
         <!-- Seccion 1: Proximos Destinos -->
-        <section class="seccion-destinos" id="proximosDestinos">
-            <h2 class="titulo-section">Próximos Destinos</h2>
-            <article class="articulo-destinos destino-uno">
-                <figure class="figure-destinos">
-                    <img class="imagen-destinos" src="img/destino1.png"
+        <section class="seccion-proximosDestinos" id="proximosDestinos">
+            <h2>Próximos Destinos</h2>
+            <article class="destino-uno">
+                <figure>
+                    <img src="img/destino1.png"
                         alt="Foto de Chicos y chicas entrando al mar a surfear en una playa al Norte del Perú">
                 </figure>
                 <h3>Yoga & Surf en el Norte del Perú</h3>
                 <p>Fecha: 10 al 20 de Enero</p>
             </article>
-            <article class="articulo-destinos destino-dos">
-                <figure class="figure-destinos">
-                    <img class="imagen-destinos" src="img/destino2.jpg"
+            <article class="destino-dos">
+                <figure>
+                    <img src="img/destino2.jpg"
                         alt="Foto de dos helados al frente de la Fontana di Trevi en Roma">
                 </figure>
                 <h3>Tour Gastronómico por Italia</h3>
                 <p>Fecha: 1 al 10 de Junio</p>
             </article>
-            <article class="articulo-destinos destino-tres">
-                <figure class="figure-destinos">
-                    <img class="imagen-destinos" src="img/destino3.jpg"
+            <article class="destino-tres">
+                <figure>
+                    <img src="img/destino3.jpg"
                         alt="Foto del famoso arbol de navidad en el Centro Rockefeller en la ciudad de Manhattan,New York">
                 </figure>
                 <h3>Navidad en New York</h3>
                 <p>Fecha: 10 al 20 diciembre </p>
             </article>
-            <a class="enlace-destinos" target="_blank" href="pages/destinos.html">ver más</a>
+            <a href="pages/destinos.html">ver más</a>
         </section>
 
         <!-- Seccion 2: Recomendaciones -->
-        <section class="seccion-Recomendaciones">
-            <h2 class="titulo-Recomendaciones">Recomendaciones</h2>
-            <article class="articulo-Recomendaciones recomendacion-uno">
-                <img class="imagen-Recomendaciones" src="img/recomendacion1.png"
-                    alt="foto de una pareja mujer y hombre abrazados y sonrientes">
+        <section class="seccion-Recomendaciones" id="recomendaciones">
+            <h2>Recomendaciones</h2>
+            <article class="recomendacion-uno">
+                <figure>
+                    <img src="img/recomendacion1.png"
+                        alt="foto de una pareja mujer y hombre abrazados y sonrientes">
+                </figure>
                 <h3>Leticia y Maxi</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est numquam similique voluptatibus maiores
-                    corrupti animi quam tempore nulla nam quo?</p>
+                <p>"Mi viaje a Sudamérica con la agencia fue una aventura auténtica. Desde caminatas emocionantes hasta experiencias culturales únicas, todo estaba perfectamente coordinado. Los guías eran apasionados y conocedores. ¡Lo recomiendo a todos los amantes de la exploración!"</p>
             </article>
-            <article class="articulo-Recomendaciones recomendacion-dos">
-                <img class="imagen-Recomendaciones" src="img/recomendacion2.png" alt="foto de una mujer joven">
+            <article class="recomendacion-dos">
+                <figure><img src="img/recomendacion2.png" alt="foto de una mujer joven"></figure>
                 <h3>Brenda</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi iusto molestiae inventore soluta
-                    laudantium officiis doloremque assumenda, dolorum in.</p>
+                <p>"Mi experiencia con la agencia en Nueva York fue simplemente increíble. Desde las atracciones icónicas hasta los rincones locales, cada momento fue inolvidable. La atención personalizada y la eficiencia en la organización hicieron que todo fuera suave y sin complicaciones.¡Gracias por una experiencia inolvidable!"</p>
             </article>
-            <article class="articulo-Recomendaciones recomendacion-tres">
-                <img class="imagen-Recomendaciones" src="img/recomendacion3.png"
-                    alt="foto de una madre e hija abrazadas">
+            <article class="recomendacion-tres">
+                <figure>
+                    <img src="img/recomendacion3.png"
+                        alt="foto de una madre e hija abrazadas">
+                </figure>
                 <h3>Raquel y Violeta</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi iusto molestiae inventore soluta
-                    laudantium officiis doloremque assumenda, dolorum in.</p>
+                <p>La agencia hizo que nuestro viaje familiar a Europa fuera inolvidable. Se encargaron de todo. La atención al cliente fue excepcional, y nos sentimos seguros y bien atendidos en cada paso del camino. ¡Definitivamente volveremos a planificar nuestras próximas vacaciones con ellos!"</p>
             </article>
-            <article class="articulo-Recomendaciones recomendacion-cuatro">
-                <img class="imagen-Recomendaciones" src="img/recomendacion4.png" alt="foto de una mujer mayor">
+            <article class="recomendacion-cuatro">
+                <figure><img src="img/recomendacion4.png" alt="foto de una mujer mayor"></figure>
                 <h3>Sonia</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi iusto molestiae inventore soluta
-                    laudantium officiis doloremque assumenda, dolorum in.</p>
+                <p>"Quería unas vacaciones relajantes en el Caribe, y la agencia superó mis expectativas. Eligieron un resort encantador y proporcionaron sugerencias locales útiles. Me sentí como si estuviera en manos de expertos. ¡Gracias por hacer de mi escapada al paraíso una experiencia perfecta!"</p>
             </article>
         </section>
 
         <!-- Seccion 3: Banner -->
-        <section class="seccion-banner-Inicio">
-            <h2 class="titulo-banner">¡vamonos de viaje!</h2>
-            <a class="enlace-banner" target="_blank" href="pages/destinos.html">elegí tu próximo destino</a>
+        <section class="bannerInicio">
+            <h2>¡vamonos de viaje!</h2>
+            <a href="pages/destinos.html">elegí tu próximo destino</a>
         </section>
     </main>
 
 
     <!-- Footer -->
     <footer>
-        <p class="footer-parrafo">Dirección: Sarandí 700, Montevideo, Uruguay</p>
+        <p>Dirección: Sarandí 700, Montevideo, Uruguay - Atención al Cliente: +598 98908152</p>
         <a target="_blank" href="#">
             <img src="img/f.png" alt="Enlace a la cuenta de Facebook de la agencia">
         </a>

@@ -1,0 +1,10 @@
+@mixin img-tamanio($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin footer($bg, $padding, $alineacion){
+    background-color: $bg;
+    padding: $padding;
+    text-align: $alineacion;
+}
