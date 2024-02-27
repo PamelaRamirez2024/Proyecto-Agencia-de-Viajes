@@ -31,6 +31,7 @@
                 /* width: 100%;  
                 height: 100%; */
                 border-radius: 10px 10px 0 0; 
+                object-fit: cover;
             }
 
         }
@@ -146,6 +147,7 @@
  /* Mobile */
 @media only screen and (max-width: 500px){
     .seccion-proximosDestinos{  
+        padding: 2rem;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(5, auto);
@@ -158,10 +160,26 @@
 
         h2{
             grid-area: titulo;
+            font-size: 1.5rem;
+            padding-bottom: 0;
+        }
+
+        article{
+            figure{
+                height: 200px;
+            }
+
+            h3{
+                font-size: 1rem;
+            }
+            p{
+                font-size: .8rem;
+            }
         }
 
         .destino-uno{
             grid-area: uno;
+          
         }
         .destino-dos{
             grid-area: dos;
@@ -173,6 +191,9 @@
         a{
             grid-area:enlace;
             width: 100%;
+            padding: .5rem;
+            font-size: .9rem;
+            border-radius: 10px;
         }
         
     }
