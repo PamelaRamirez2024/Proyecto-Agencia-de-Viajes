@@ -8,4 +8,28 @@
 
 }
 
+/* MEDIA QUERYS - PAGE NOSOTROS */
+
+/* Movile */
+@media only screen and (max-width: 500px){
+  .seccion-Nosotros{
+    padding: $padding-section-mobile;
+
+    h2{
+      font-size: $font-size-h2-mobile;
+      padding: 1rem;
+    }
+
+    h3{
+      font-size: $font-size-h3-mobile;
+    }
+
+    p{
+      font-size: $font-size-p-mobile;
+    }
+  }
+}
+
+
+
 

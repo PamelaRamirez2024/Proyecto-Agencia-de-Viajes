@@ -4,6 +4,13 @@
     background-image: url(../img/Header.png);
     background-color: $color-Header-Footer;
     height: 90vh;
+    text-align: center;
+
+    h1{
+        font-size: 5rem;
+        font-style: italic;
+        color: $colorPrincipal;
+    }
 
     p{
         font-size: 1rem;
@@ -33,12 +40,7 @@
     }
 }
 
-h1{
-    font-size: 5rem;
-    padding: 5rem;
-    font-style: italic;
-    color: $colorPrincipal;
-}
+
 
 
 
@@ -65,17 +67,18 @@ h1{
         height: 100vh;
 
         h1{
-            font-size: 3rem;
-            padding: 2rem;
+            font-size: 2.5rem;
+            font-weight: bolder;
         }
 
         p{
-            font-size: .6rem;
+            font-size: $font-size-p-mobile;
         }
        
         input{
-            padding: .6em;
-            font-size: .6rem;
+            padding: .3rem;
+            font-size: .7rem;
+            border-radius: 5px;
         }
     
         .email{

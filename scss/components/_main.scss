@@ -92,6 +92,7 @@
             width: 150px;
             height: 150px;
             margin: auto;
+            object-fit: cover;
         
 
             img{
@@ -143,11 +144,12 @@
 
 }
 
-/* MEDIA QUERYS---------------------------------- */
+/* MEDIA QUERYS - INDEX MAIN */
  /* Mobile */
 @media only screen and (max-width: 500px){
+
     .seccion-proximosDestinos{  
-        padding: 2rem;
+        padding: $padding-section-mobile;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(5, auto);
@@ -160,8 +162,8 @@
 
         h2{
             grid-area: titulo;
-            font-size: 1.5rem;
-            padding-bottom: 0;
+            font-size: $font-size-h2-mobile;
+            padding-bottom: $padding-botom-h2-mobile;
         }
 
         article{
@@ -172,19 +174,19 @@
             }
 
             h3{
-                font-size: 1rem;
+                font-size: $font-size-h3-mobile;
             }
             p{
-                font-size: .8rem;
+                font-size: $font-size-p-mobile;
             }
         }
 
         a{
             grid-area:enlace;
             width: 100%;
-            padding: .5rem;
+            padding: $padding-a-mobile;
             font-size: .9rem;
-            border-radius: 10px;
+            border-radius: $border-radius-a-mobile;
         }
         
     }
@@ -203,7 +205,7 @@
 
     /* Recomendaciones */
     .seccion-Recomendaciones{  
-        padding: 2rem;
+        padding: $padding-section-mobile;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,auto);
@@ -213,12 +215,27 @@
         'uno uno uno uno';
 
         h2{
-            font-size: 1.5rem;
-            padding-bottom: 0;
+            font-size: $font-size-h2-mobile;
+            padding-bottom: $padding-botom-h2-mobile;
         }
 
         article{
             padding: 1rem;
+
+            figure{
+                width: 100px;
+                height: 100px;
+               /*  margin: auto;
+                object-fit: cover; */
+            }
+
+            h3{
+                font-size: $font-size-h3-mobile;
+            }
+
+            p{
+                font-size: $font-size-p-mobile;
+            }
 
         }
          
@@ -251,12 +268,14 @@
     /* Banner-Inicio */
     .bannerInicio{
         h2{
-            font-size: 1.8rem;
+            font-size: $font-size-h2-mobile;
+            font-weight: bolder;
         }
 
         a{
-            font-size: 1rem;
-            padding: .5rem;
+            font-size: $font-size-p-mobile;
+            padding: $padding-a-mobile;
+            border-radius: 10px;
         }
     }
 }

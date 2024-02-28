@@ -26,3 +26,62 @@
         }
     }
 }
+
+
+/* MEDIA QUERY PAGE CONTACTANOS*/
+/* Mobile */
+@media only screen and (max-width: 500px){
+    .seccion-contactanos{
+        padding: $padding-section-mobile;
+
+        h2{
+            font-size: $font-size-h2-mobile;
+            padding: $padding-botom-h2-mobile;
+        }
+
+        form{
+
+            label, input, textarea{
+                font-size: $font-size-p-mobile;
+            }
+
+            .enviar{
+                font-size: $font-size-a-mobile;
+                padding: $padding-a-mobile;
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

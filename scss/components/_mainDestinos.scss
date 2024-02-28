@@ -5,6 +5,7 @@
 
     h2{
         @extend %subtitulo;
+        padding: 0;
     }
 
     article{
@@ -29,36 +30,38 @@
 
         }
 
-        .descripcion-destinos{
-            grid-area: descripcion;
-            text-align: start;
-            margin: auto;
+        
+    }
 
-            h3{
-                color: $colorSecundario;
-            }
+    .descripcion-destinos{
+        grid-area: descripcion;
+        text-align: start;
+        margin: auto;
 
-            p{
-                font-size: .9rem;
-            }
-
-            li{
-                font-size: .8rem;
-            }
+        h3{
+            color: $colorSecundario;
         }
 
-        .comprar-destinos{
-            grid-area: comprar;
+        p{
+            font-size: .9rem;
+        }
 
-            .itinerario:hover{
-                transform: scale(1.2);
-            }
-            
+        li{
+            font-size: .8rem;
+        }
+    }
 
-            .boton-comprar{
-                @extend %enlace, %boton;
-                font-size: 1rem;
-            }
+    .comprar-destinos{
+        grid-area: comprar;
+
+        .itinerario:hover{
+            transform: scale(1.2);
+        }
+        
+
+        .boton-comprar{
+            @extend %enlace, %boton;
+            font-size: 1rem;
         }
     }
 }
@@ -67,7 +70,16 @@
  /* Mobile*/
  @media only screen and (max-width: 500px){
     .seccion-destinos{
-        padding:2rem;
+        padding:$padding-section-mobile;
+        gap: $gap-SeccionDestino-mobile;
+
+        h2{
+            font-size: $font-size-h2-mobile;
+        }
+
+        form{
+            font-size: $font-size-p-mobile;
+        }
 
         article{
             display: grid;
@@ -78,8 +90,30 @@
             'descripcion'
             'comprar'; 
             padding: 0 1rem 0 1rem;
+
+            h3{
+                font-size: $font-size-h3-mobile;
+            }
+
+            p{
+                font-size: $font-size-p-mobile;
+            }
+
+            
+            }
+
+           
+        .comprar-destinos{
+             .boton-comprar{
+                    font-size: $font-size-a-mobile;
+                    padding: $padding-a-mobile;
+                    border-radius: $border-radius-a-mobile;
+                    width: 100%;
+            
+            }   
         }
     }
+
  }
 
  /* Tablet */

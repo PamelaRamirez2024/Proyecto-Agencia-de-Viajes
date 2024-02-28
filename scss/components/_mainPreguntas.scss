@@ -5,6 +5,10 @@
     h2{
         @extend %subtitulo;
     }
+    
+    .accordion-collapse{
+        padding: 1rem;
+    }
 }
 
 .banner-preguntasFrecuentes{
@@ -15,7 +19,7 @@
     h2{
         @extend %subtitulo;
         color: $colorPrincipal;
-        padding-top: 5rem;
+      /*   padding-top: 5rem; */
         font-size: 4rem;
     }
 
@@ -28,10 +32,36 @@
 
 /* Mobile */
 @media only screen and (max-width: 500px){
-    /* Banner-PreguntasFrecuentes */
-    .banner-preguntasFrecuentes{
+
+    .seccion-preguntas{
+        padding: $padding-section-mobile;
+
         h2{
-            font-size: 2rem;
+            font-size: $font-size-h2-mobile;
+        }
+
+        .accordion-button{
+            font-size: $font-size-p-mobile;
+        }
+
+        .accordion-collapse{
+            font-size: $font-size-p-mobile;
+        }
+
+    }
+
+    .banner-preguntasFrecuentes{
+        height: 80vh;
+        
+        h2{
+            font-size: $font-size-h2-mobile;
+            font-weight: bolder;
+        }
+
+        a{
+            font-size: $font-size-a-mobile;
+            padding: $padding-a-mobile;
+            border-radius: $border-radius-a-mobile;
         }
     }
 }
