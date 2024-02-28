@@ -75,7 +75,7 @@ html {
 
 h1 {
   font-size: 5rem;
-  padding: 4.5rem;
+  padding: 5rem;
   font-style: italic;
   color: rgb(255, 255, 255);
 }
@@ -101,7 +101,7 @@ h1 {
     font-size: 0.6rem;
   }
   .header-Inicio input {
-    padding: 0.5em;
+    padding: 0.6em;
     font-size: 0.6rem;
   }
   .header-Inicio .email {
@@ -247,6 +247,9 @@ h1 {
     font-size: 1.5rem;
     padding-bottom: 0;
   }
+  .seccion-proximosDestinos article {
+    padding-bottom: 0.5rem;
+  }
   .seccion-proximosDestinos article figure {
     height: 200px;
   }
@@ -256,15 +259,6 @@ h1 {
   .seccion-proximosDestinos article p {
     font-size: 0.8rem;
   }
-  .seccion-proximosDestinos .destino-uno {
-    grid-area: uno;
-  }
-  .seccion-proximosDestinos .destino-dos {
-    grid-area: dos;
-  }
-  .seccion-proximosDestinos .destino-tres {
-    grid-area: tres;
-  }
   .seccion-proximosDestinos a {
     grid-area: enlace;
     width: 100%;
@@ -272,12 +266,33 @@ h1 {
     font-size: 0.9rem;
     border-radius: 10px;
   }
+  .destino-uno {
+    grid-area: uno;
+  }
+  .destino-dos {
+    grid-area: dos;
+  }
+  .destino-tres {
+    grid-area: tres;
+  }
   /* Recomendaciones */
   .seccion-Recomendaciones {
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "titulo titulo titulo titulo" "uno uno uno uno";
+  }
+  .seccion-Recomendaciones h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
+  .seccion-Recomendaciones article {
+    padding: 1rem;
+  }
+  .recomendacion-uno {
+    grid-area: uno;
+    display: block;
   }
   .recomendacion-dos {
     grid-area: dos;
@@ -293,7 +308,11 @@ h1 {
   }
   /* Banner-Inicio */
   .bannerInicio h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .bannerInicio a {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 /* Tablet */

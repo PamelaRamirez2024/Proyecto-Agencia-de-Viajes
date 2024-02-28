@@ -165,6 +165,8 @@
         }
 
         article{
+            padding-bottom: .5rem;
+
             figure{
                 height: 200px;
             }
@@ -177,17 +179,6 @@
             }
         }
 
-        .destino-uno{
-            grid-area: uno;
-          
-        }
-        .destino-dos{
-            grid-area: dos;
-        }
-        .destino-tres{
-            grid-area: tres;
-        }
-
         a{
             grid-area:enlace;
             width: 100%;
@@ -198,8 +189,21 @@
         
     }
 
+    .destino-uno{
+        grid-area: uno;
+      
+    }
+    .destino-dos{
+        grid-area: dos;
+    }
+    .destino-tres{
+        grid-area: tres;
+    }
+
+
     /* Recomendaciones */
     .seccion-Recomendaciones{  
+        padding: 2rem;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,auto);
@@ -208,8 +212,24 @@
         'titulo titulo titulo titulo'
         'uno uno uno uno';
 
+        h2{
+            font-size: 1.5rem;
+            padding-bottom: 0;
+        }
+
+        article{
+            padding: 1rem;
+
+        }
+         
     }
 
+    .recomendacion-uno{
+        grid-area: uno;
+        display: block;
+    }
+
+    
     .recomendacion-dos{
         grid-area: dos;
         display:none;
@@ -226,10 +246,17 @@
         display: none;
     }
 
+
+
     /* Banner-Inicio */
     .bannerInicio{
         h2{
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+
+        a{
+            font-size: 1rem;
+            padding: .5rem;
         }
     }
 }
