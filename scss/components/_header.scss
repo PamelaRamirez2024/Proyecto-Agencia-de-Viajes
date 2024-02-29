@@ -96,8 +96,14 @@
         height: 100vh;
 
         h1{
-            font-size: 4rem;
-            padding: 4rem;
+            font-size: 3rem;
+        }
+
+        
+        input{
+            padding: .5rem;
+            font-size: .7rem;
+            border-radius: 5px;
         }
 
         .email{

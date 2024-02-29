@@ -14,14 +14,8 @@
 .banner-preguntasFrecuentes{
     @extend %parallax;
     background-image: url("../img/contactanos.jpg");
-    height: 90vh;
-
-    h2{
-        @extend %subtitulo;
-        color: $colorPrincipal;
-      /*   padding-top: 5rem; */
-        font-size: 4rem;
-    }
+    height: 70vh;
+    padding: 8rem 0;
 
     a{
         @extend %enlace, %boton;
@@ -51,17 +45,48 @@
     }
 
     .banner-preguntasFrecuentes{
-        height: 80vh;
-        
-        h2{
-            font-size: $font-size-h2-mobile;
-            font-weight: bolder;
-        }
+
+        background-position: 0 20px;
+        padding: 12rem 0;
 
         a{
             font-size: $font-size-a-mobile;
             padding: $padding-a-mobile;
             border-radius: $border-radius-a-mobile;
+        }
+    }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width: 968px){
+
+    .seccion-preguntas{
+        padding: $padding-section-tablet;
+
+        h2{
+            font-size: $font-size-h2-tablet;
+            padding-bottom: $padding-botom-h2-tablet;
+        }
+
+        .accordion-button{
+            font-size: $font-size-p-tablet;
+        }
+
+        .accordion-collapse{
+            font-size: $font-size-p-tablet;
+        }
+
+    }
+
+    .banner-preguntasFrecuentes{
+        background-position: 0 80px;
+        padding: 5rem 0;
+      
+        a{
+            font-size: $font-size-a-tablet;
+            padding: $padding-a-tablet;
+            border-radius: $border-radius-a-tablet;
         }
     }
 }
