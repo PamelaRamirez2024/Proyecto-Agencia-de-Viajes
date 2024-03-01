@@ -23,7 +23,6 @@
         
         figure{
             grid-area: img;
-            width: 1fr;
 
             img{
                 width: 100%;
@@ -101,9 +100,22 @@
                 font-size: $font-size-h3-mobile;
             }
 
+            p{
+                font-size: $font-size-p-mobile;
+            }
+
+            li{
+                font-size: $font-size-p-mobile;
+            }
+
         }
         
         .comprar-destinos{
+            
+            p{
+                font-size: $font-size-p-mobile;
+            }
+
              .boton-comprar{
                     font-size: $font-size-a-mobile;
                     padding: $padding-a-mobile;
@@ -120,6 +132,7 @@
     .seccion-destinos{
         padding: $padding-section-tablet;
 
+
         article{
             display: grid;
             grid-template-columns: 1fr;
@@ -131,11 +144,18 @@
         
             padding: 1rem;
             gap: $gap-articuloDestino-tablet;
+
+            figure{
+                img{
+                    width: 100%;
+                }
+            }
          }
    
         .comprar-destinos{
 
             img{
+                width: 50%;
                 padding: 0 2rem;
             }
         

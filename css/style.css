@@ -475,7 +475,6 @@ html {
 }
 .seccion-destinos article figure {
   grid-area: img;
-  width: 1fr;
 }
 .seccion-destinos article figure img {
   width: 100%;
@@ -529,6 +528,15 @@ html {
   .seccion-destinos .descripcion-destinos h3 {
     font-size: 0.9rem;
   }
+  .seccion-destinos .descripcion-destinos p {
+    font-size: 0.6rem;
+  }
+  .seccion-destinos .descripcion-destinos li {
+    font-size: 0.6rem;
+  }
+  .seccion-destinos .comprar-destinos p {
+    font-size: 0.6rem;
+  }
   .seccion-destinos .comprar-destinos .boton-comprar {
     font-size: 0.8rem;
     padding: 0.5rem;
@@ -549,7 +557,11 @@ html {
     padding: 1rem;
     gap: 1rem;
   }
+  .seccion-destinos article figure img {
+    width: 100%;
+  }
   .seccion-destinos .comprar-destinos img {
+    width: 50%;
     padding: 0 2rem;
   }
   .seccion-destinos .comprar-destinos .boton-comprar {
