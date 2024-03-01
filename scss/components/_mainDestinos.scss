@@ -1,3 +1,4 @@
+/* PAGE DESTINOS */
 .seccion-destinos{
     @extend %secciones;
     gap: $gap-SeccionDestino;
@@ -29,9 +30,7 @@
                 object-fit: cover;
             }
 
-        }
-
-        
+        }  
     }
 
     .descripcion-destinos{
@@ -67,8 +66,9 @@
     }
 }
 
-/* MEDIA QUERYS---------------------------------- */
- /* Mobile*/
+
+/* MEDIA QUERYS PAGE DESTINOS------------ */
+ /* Page Destinos -Mobile*/
  @media only screen and (max-width: 500px){
     .seccion-destinos{
         padding:$padding-section-mobile;
@@ -94,8 +94,7 @@
             gap:$gap-articuloDestino-mobile;
 
         }
-
-            
+        
         .descripcion-destinos{
 
             h3{
@@ -104,23 +103,19 @@
 
         }
         
-        
         .comprar-destinos{
-           
-
              .boton-comprar{
                     font-size: $font-size-a-mobile;
                     padding: $padding-a-mobile;
                     border-radius: $border-radius-a-mobile;
                     width: 100%;
-            
             }   
         }
     }
 
  }
 
- /* Tablet */
+ /* Page Destinos -Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px ){
     .seccion-destinos{
         padding: $padding-section-tablet;
@@ -137,23 +132,21 @@
             padding: 1rem;
             gap: $gap-articuloDestino-tablet;
          }
+   
+        .comprar-destinos{
 
-         
-    .comprar-destinos{
-
-        img{
-            padding: 0 2rem;
+            img{
+                padding: 0 2rem;
+            }
+        
+            .boton-comprar{
+                font-size: $font-size-a-tablet;
+                padding: $padding-a-tablet;
+                border-radius: $border-radius-a-tablet;
+                width: 100%;
+        
+            }   
         }
-     
-        .boton-comprar{
-               font-size: $font-size-a-tablet;
-               padding: $padding-a-tablet;
-               border-radius: $border-radius-a-tablet;
-               width: 100%;
-       
-       }   
-   }
     }
-
 }
 

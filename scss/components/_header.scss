@@ -40,10 +40,6 @@
     }
 }
 
-
-
-
-
 .email{
     border: 2px solid $colorPrincipal;
     display: inline-block;
@@ -57,12 +53,11 @@
 
 
 
-/* MEDIA QUERYS */
+/* MEDIA QUERYS HEADER */
 
- /* Mobile */
+ /*  HEADER Mobile */
 @media only screen and (max-width: 500px){
  
-    /* Header------------------------------------------- */
     .header-Inicio{
         height: 100vh;
 
@@ -85,12 +80,9 @@
         width: 50%;
         } 
     }
-    
-    
-
 }
 
- /* Tablet */
+ /*  HEADER Tablet */
  @media only screen and (min-width: 501px) and (max-width: 968px){
     .header-Inicio{
         height: 100vh;
@@ -98,8 +90,7 @@
         h1{
             font-size: 3rem;
         }
-
-        
+    
         input{
             padding: .5rem;
             font-size: .7rem;
@@ -109,8 +100,6 @@
         .email{
         width: 40%;
         } 
-
-    
     }  
 }
 

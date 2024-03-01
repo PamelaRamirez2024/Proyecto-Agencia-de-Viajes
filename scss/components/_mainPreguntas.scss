@@ -1,3 +1,4 @@
+/* PAGE PREGUNTAS FRECUENTES */
 .seccion-preguntas{
     @extend %secciones;
     background-color: $colorBackground;
@@ -13,7 +14,7 @@
 
 .banner-preguntasFrecuentes{
     @extend %parallax;
-    background-image: url("../img/contactanos.jpg");
+    background-image: url("../img/banner-preguntas.jpg");
     height: 70vh;
     padding: 8rem 0;
 
@@ -23,8 +24,8 @@
 
 }
 
-
-/* Mobile */
+/* MEDIA QUERYS PAGE PREGUNTAS FRECUENTES */
+/* Page Preguntas -Mobile */
 @media only screen and (max-width: 500px){
 
     .seccion-preguntas{
@@ -41,7 +42,6 @@
         .accordion-collapse{
             font-size: $font-size-p-mobile;
         }
-
     }
 
     .banner-preguntasFrecuentes{
@@ -58,7 +58,7 @@
 }
 
 
-/* Tablet */
+/* Page Preguntas - Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px){
 
     .seccion-preguntas{
@@ -76,7 +76,6 @@
         .accordion-collapse{
             font-size: $font-size-p-tablet;
         }
-
     }
 
     .banner-preguntasFrecuentes{

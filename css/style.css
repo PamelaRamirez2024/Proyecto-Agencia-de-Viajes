@@ -1,4 +1,3 @@
-/* movile */
 .banner-preguntasFrecuentes, .bannerInicio, .header-Inicio {
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,11 +48,6 @@ html {
   scroll-behavior: smooth;
 }
 
-h2 {
-  font-size: 1.5rem;
-  padding-bottom: 0;
-}
-
 /* Page 1: Inicio */
 .header-Inicio {
   background-image: url(../img/Header.png);
@@ -91,10 +85,9 @@ h2 {
   width: 25%;
 }
 
-/* MEDIA QUERYS */
-/* Mobile */
+/* MEDIA QUERYS HEADER */
+/*  HEADER Mobile */
 @media only screen and (max-width: 500px) {
-  /* Header------------------------------------------- */
   .header-Inicio {
     height: 100vh;
   }
@@ -114,7 +107,7 @@ h2 {
     width: 50%;
   }
 }
-/* Tablet */
+/*  HEADER Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   .header-Inicio {
     height: 100vh;
@@ -136,8 +129,8 @@ h2 {
   background-color: rgb(26, 117, 188);
 }
 
-/* MAIN ------------------------------------------------------------------------------*/
-/* Seccion: Proximos Destinos */
+/* INDEX MAIN ------------------------------------------------------------------------------*/
+/* INDEX MAIN Seccion: Proximos Destinos */
 .seccion-proximosDestinos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -166,7 +159,7 @@ h2 {
   object-fit: cover;
 }
 .seccion-proximosDestinos article h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .seccion-proximosDestinos a {
   grid-area: enlace;
@@ -187,7 +180,7 @@ h2 {
   grid-area: tres;
 }
 
-/* Recomendaciones*/
+/* INDEX MAIN Seccion: Recomendaciones*/
 .seccion-Recomendaciones {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -201,18 +194,21 @@ h2 {
 }
 .seccion-Recomendaciones article {
   background-color: rgb(255, 255, 255);
-  padding: 2rem;
+  padding: 1.2rem;
   font-style: italic;
   border-radius: 10px;
 }
 .seccion-Recomendaciones article figure {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   margin: auto;
   object-fit: cover;
 }
 .seccion-Recomendaciones article figure img {
   border: 5px solid rgb(240, 240, 240);
+}
+.seccion-Recomendaciones article h3 {
+  font-size: 1.3rem;
 }
 .seccion-Recomendaciones article p {
   font-size: 0.8rem;
@@ -234,9 +230,9 @@ h2 {
   grid-area: cuatro;
 }
 
-/* Seccion: Banner */
+/* INDEX MAIN Seccion: Banner */
 .bannerInicio {
-  background-image: url("../img/banner1.jpg");
+  background-image: url("../img/banner-inicio.jpg");
   height: 60vh;
 }
 .bannerInicio h2 {
@@ -245,8 +241,9 @@ h2 {
   font-size: 4rem;
 }
 /* MEDIA QUERYS - INDEX MAIN */
-/* Mobile */
+/* index Main Mobile */
 @media only screen and (max-width: 500px) {
+  /* seccion proximos destinos-mobile */
   .seccion-proximosDestinos {
     padding: 2rem;
     display: grid;
@@ -288,7 +285,7 @@ h2 {
   .destino-tres {
     grid-area: tres;
   }
-  /* Recomendaciones */
+  /* seccion recomendaciones-mobile */
   .seccion-Recomendaciones {
     padding: 2rem;
     display: grid;
@@ -306,8 +303,6 @@ h2 {
   .seccion-Recomendaciones article figure {
     width: 100px;
     height: 100px;
-    /*  margin: auto;
-     object-fit: cover; */
   }
   .seccion-Recomendaciones article h3 {
     font-size: 0.9rem;
@@ -331,7 +326,7 @@ h2 {
     grid-area: cuatro;
     display: none;
   }
-  /* Banner-Inicio */
+  /* seccion Banner-mobile*/
   .bannerInicio h2 {
     font-size: 1.5rem;
     font-weight: bolder;
@@ -342,8 +337,9 @@ h2 {
     border-radius: 10px;
   }
 }
-/* Tablet */
+/* index Main Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
+  /* seccion proximos destinos -mobile */
   .seccion-proximosDestinos {
     padding: 3rem;
     display: grid;
@@ -379,7 +375,7 @@ h2 {
     width: 50%;
     margin: auto;
   }
-  /* Recomendaciones */
+  /* seccion recomendaciones -mobile */
   .seccion-Recomendaciones {
     padding: 3rem;
     display: grid;
@@ -413,7 +409,7 @@ h2 {
     grid-area: cuatro;
     display: none;
   }
-  /* Banner-Inicio */
+  /* seccion Banner- mobile */
   .bannerInicio h2 {
     font-size: 2rem;
     font-weight: bolder;
@@ -424,9 +420,9 @@ h2 {
     border-radius: 10px;
   }
 }
-/* Main Nosotros */
+/* PAGE Nosotros */
 /* MEDIA QUERYS - PAGE NOSOTROS */
-/* Movile */
+/* Page Nosotros -Mobile */
 @media only screen and (max-width: 500px) {
   .seccion-Nosotros {
     padding: 2rem;
@@ -442,7 +438,7 @@ h2 {
     font-size: 0.6rem;
   }
 }
-/* Tablet */
+/* PAge Nosotros -Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   .seccion-Nosotros {
     padding: 3rem;
@@ -458,6 +454,7 @@ h2 {
     font-size: 0.8rem;
   }
 }
+/* PAGE DESTINOS */
 .seccion-destinos {
   gap: 3rem;
   background-color: rgb(240, 240, 240);
@@ -508,8 +505,8 @@ h2 {
   font-size: 1rem;
 }
 
-/* MEDIA QUERYS---------------------------------- */
-/* Mobile*/
+/* MEDIA QUERYS PAGE DESTINOS------------ */
+/* Page Destinos -Mobile*/
 @media only screen and (max-width: 500px) {
   .seccion-destinos {
     padding: 2rem;
@@ -539,7 +536,7 @@ h2 {
     width: 100%;
   }
 }
-/* Tablet */
+/* Page Destinos -Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   .seccion-destinos {
     padding: 3rem;
@@ -562,6 +559,7 @@ h2 {
     width: 100%;
   }
 }
+/* PAGE PREGUNTAS FRECUENTES */
 .seccion-preguntas {
   background-color: rgb(240, 240, 240);
 }
@@ -570,11 +568,12 @@ h2 {
 }
 
 .banner-preguntasFrecuentes {
-  background-image: url("../img/contactanos.jpg");
+  background-image: url("../img/banner-preguntas.jpg");
   height: 70vh;
   padding: 8rem 0;
 }
-/* Mobile */
+/* MEDIA QUERYS PAGE PREGUNTAS FRECUENTES */
+/* Page Preguntas -Mobile */
 @media only screen and (max-width: 500px) {
   .seccion-preguntas {
     padding: 2rem;
@@ -598,7 +597,7 @@ h2 {
     border-radius: 10px;
   }
 }
-/* Tablet */
+/* Page Preguntas - Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   .seccion-preguntas {
     padding: 3rem;
@@ -638,7 +637,7 @@ h2 {
 }
 
 /* MEDIA QUERY PAGE CONTACTANOS*/
-/* Mobile */
+/* page Contactanos -Mobile */
 @media only screen and (max-width: 500px) {
   .seccion-contactanos {
     padding: 2rem;
@@ -656,7 +655,7 @@ h2 {
     padding: 0.5rem;
   }
 }
-/* Tablet */
+/* Page Contactanos -Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   .seccion-contactanos {
     padding: 2rem;
@@ -688,14 +687,14 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* MEDIA QUERY */
-/* Mobile */
+/* MEDIA QUERY FOOTER */
+/* FOOTER Mobile */
 @media only screen and (max-width: 500px) {
   footer p {
     font-size: 0.7rem;
   }
 }
-/* Tablet */
+/* FOOTER Tablet */
 @media only screen and (min-width: 501px) and (max-width: 968px) {
   footer p {
     font-size: 0.8rem;
